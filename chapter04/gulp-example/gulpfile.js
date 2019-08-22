@@ -16,5 +16,5 @@ gulp.task("default", () => {
 });
 
 gulp.task("watch", () => {
-  watch("app/**.jsx", () => gulp.setMaxListeners("default"));
-})
+  watch("app/**.jsx", () => gulp.start("default"));
+});
